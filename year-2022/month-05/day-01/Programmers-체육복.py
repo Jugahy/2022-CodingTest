@@ -12,6 +12,7 @@ def solution(n, lost, reserve):
         else:
             dic[i] = 1
 
+# 딕셔너리의 value들을 받을 때 리스트로 받았으니 다시 딕셔너리로 사용할려면 인덱스 주의
     for j in range(n):
         if list(dic.values())[j] == 0:
             try:

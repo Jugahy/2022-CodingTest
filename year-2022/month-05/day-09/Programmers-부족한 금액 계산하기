@@ -1,0 +1,10 @@
+def solution(price, money, count):
+  
+    answer = 0
+    ans = 0
+
+    for i in range(count):
+        answer+=price
+        ans+=answer
+  
+    return (lambda aa : 0 if (aa < 0) else aa)(ans-money)
